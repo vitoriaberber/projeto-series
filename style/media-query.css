@@ -1,0 +1,11 @@
+@media screen and (width >= 520px) {
+    .cabecalho {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__container {
+        padding-right: 1rem;
+        font-size: 1.2rem;
+    }
+}

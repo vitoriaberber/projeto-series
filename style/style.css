@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+:root {
+    --cor-preto: #000000;
+    --cor-branco: #ffffff;
+    --cor-azul-escuro: #03045E;
+    --cor-azul: #0077B6;
+
+    --font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--cor-branco);
+    background-color: var(--cor-preto);
+    width: 99vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-azul-escuro);
+    padding: .5rem;
+    flex-wrap: wrap;
+}
+
+.cabecalho__titulo {
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+.cabecalho__container > ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .9rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cabecalho__container > ul > li > a {
+    text-decoration: none;
+    color: var(--cor-branco);
+    transition: font-size .5s ease;
+    padding: .5rem;
+}
+
+.cabecalho__container > ul > li > a:hover {
+    background-color: var(--cor-azul);
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.principal__banner {
+    background: url('../assets/pll-fundo.jpg') no-repeat top center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 110vh;
+    color: var(--cor-azul-escuro);
+    position: relative;
+}
+
+.principal__sessao {
+    margin: 2rem;
+}
+
+.sessao__titulo {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.sessao__series {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+}
+
+.series__series {
+    position: relative;
+}
+
+.series__titulo {
+    margin-top: .5rem;
+    text-align: center;
+}
+
+.series__sinopse {
+    display: none;
+}
+
+.series__imagem:hover ~ .series__sinopse{
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    top: 0;
+    color: var(--cor-branco);
+    background-color: #00000065;
+    padding-top: .5rem;
+    font-weight: 600;
+}
+
+.rodape {
+    background-color: var(--cor-azul-escuro);
+    padding: 1rem;
+    text-align: center;
+}
+
+.rodape strong {
+    font-weight: 600;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: var(--cor-branco);
+}
